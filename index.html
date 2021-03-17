@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1/mathquill.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1/mathquill.min.js" type="text/javascript"></script> 
+    <script>
+        var MQ = MathQuill.getInterface(2);
+    </script>
+    <title>Mathquill</title>
+</head>
+<body>
+    <div class="container">
+        <div class="inner-container">
+            <h1>Mathquill test</h1>
+            <div class="task">
+                <h2>Task example</h2>
+                <p>
+                    Prime number, shores of the cosmic ocean the ash of stellar alchemy, decipherment kindling 
+                    the energy hidden in matter rich in mystery vastness is bearable only through love, radio telescope 
+                    consciousness billions upon billions Drake Equation dream of the mind's eye with pretty stories.
+                </p>
+                <p>Solve <span id="problem">f(x) = ax^2 + bx + c + = 0</span>.</p>
+            </div>
+
+            <div class="answer">
+                <h2>Answer example</h2>
+                <p>Type math here:</p>
+                <p><span id="math-field"></span></p>
+            </div>
+
+            <div id="keyboard">
+                <div class="btn-group" role="group" aria-label="math functions">
+                <button type="button" class="btn btn-default" onClick='input("*")'>×</button>
+                <button type="button" class="btn btn-default" onClick='input("/")'>÷</button>
+                <button type="button" class="btn btn-default" onClick='input("\\sqrt")'>√</button>
+                <button type="button" class="btn btn-default" onClick= 'input("\\sin")'>sin</button>
+                <button type="button" class="btn btn-default" onClick='input("\\cos")'>cos</button>
+                <button type="button" class="btn btn-default" onClick='input("\\tan")'>tan</button>
+                <button type="button" class="btn btn-default" onClick='input("\Pi")'>Pi</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/mathquill.js"></script>
+</body>
+</html>
